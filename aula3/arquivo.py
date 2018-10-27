@@ -5,6 +5,7 @@
 # arq.close()
 
 with open('teste.txt', 'r') as arq:
+    #arq.seek(0)
     print(arq.read(), end='')
     # print(arq.readline(), end='')
     # print(arq.tell())
