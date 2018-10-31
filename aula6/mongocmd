@@ -1,0 +1,13 @@
+mongo
+show dbs
+show tables
+show collections
+use NOME_BD
+Ex:
+
+db.usuario.insert({_id:1, nome:'daniel', sobrenome:'prata'})
+db.usuario.find()
+db.usuario.find().pretty()
+db.usuario.remove()
+db.usuarios.update({_id:1},{$set:{nome:'Pedro'}})
+university.mongodb.com
