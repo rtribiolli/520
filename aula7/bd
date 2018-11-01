@@ -1,0 +1,13 @@
+create user admin password '4linux';
+create database projeto owner admin;
+psql -h localhost -U admin projeto
+create table produtos(id serial primary key, nome varchar(50), preco money);
+\dt
+\d produtos
+alter table produtos add column quantidade smallint; 
+select * from produtos;
+select nome from produtos;
+select nome, preco from produtos;
+select * from produtos where id=1;
+select * from produtos where quantidade >=1
+update produtos set quantidade=100 where nome='cerveja';
