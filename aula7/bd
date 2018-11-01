@@ -4,6 +4,7 @@ psql -h localhost -U admin projeto
 create table produtos(id serial primary key, nome varchar(50), preco money);
 \dt
 \d produtos
+insert into produtos(nome, preco, quantidade) values('computer', 2000, 3);
 alter table produtos add column quantidade smallint; 
 select * from produtos;
 select nome from produtos;
